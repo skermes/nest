@@ -1,0 +1,45 @@
+body {
+}
+
+#container {
+  width: 75%;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Georgia';
+  font-size: 300%;
+}
+
+#new_msg {
+  margin: .5em;
+}
+
+#title {
+  display: inline-block;
+}
+
+#msg_grid {
+}
+
+.msg {
+  width: 260px;
+  margin: 5px;
+  padding: 4px;
+  display: inline-block;
+}
+
+.msg .content {
+  display: inline-block;
+  width: 95%;
+  height: 5em;
+}
+
+.msg .btn {
+  display: inline-block;
+}
+
+.template {
+  display: none;
+}
+

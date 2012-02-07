@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title Nest
+    %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/css/bootstrap.css' }
+    %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/nest.css' }
+    %script{ :type => 'text/javascript', :src => 'http://code.jquery.com/jquery-1.7.1.min.js' }
+    %script{ :type => 'text/javascript', :src => '/nest.js' }
+  %body
+    %div#container
+      %h1#title Nest
+      %a#new_msg.btn{ :href => "#" }
+        %i.icon-plus
+      %div#msg_grid
+        %div.msg.template
+          %textarea.content
+          %a.btn.fork{ :href => "#" }
+            %i.icon-random
+          %a.btn.tweet{ :href => "#" }
+            %i.icon-share
+          %span.chars_left 140
+
