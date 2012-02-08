@@ -52,7 +52,8 @@ h1 {
   display: inline-block;
 }
 
-.msg.placeholder {
+.msg.placeholder:hover {
+  background-color: transparent;
 }
 
 .msg.placeholder.drag_onto {
