@@ -5,6 +5,7 @@
     %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/css/bootstrap.css' }
     %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/nest.css' }
     %script{ :type => 'text/javascript', :src => 'http://code.jquery.com/jquery-1.7.1.min.js' }
+    %script{ :type => 'text/javascript', :src => '/jquery-ui-1.8.17.custom.min.js' }
     %script{ :type => 'text/javascript', :src => '/nest.js' }
   %body
     %div#container
@@ -12,6 +13,15 @@
       %a#new_msg.btn{ :href => "#" }
         %i.icon-plus
       %div#msg_grid
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
+        %div.msg.placeholder
         %div.msg.template
           %textarea.content
           %a.btn.fork{ :href => "#" }

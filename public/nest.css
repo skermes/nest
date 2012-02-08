@@ -27,16 +27,36 @@ h1 {
   margin: 5px;
   padding: 4px;
   display: inline-block;
+  height: 108px;
+}
+
+.msg:hover {
+  background-color: #d9edf7;
+}
+
+.msg.dragging {
+  background-color: #d9edf7;
+}
+
+.msg.drag_onto {
+  background-color: #dff0d8;
 }
 
 .msg .content {
   display: inline-block;
+  height:5em;
   width: 95%;
-  height: 5em;
 }
 
 .msg .btn {
   display: inline-block;
+}
+
+.msg.placeholder {
+}
+
+.msg.placeholder.drag_onto {
+  background-color: #dff0d8;
 }
 
 .template {
