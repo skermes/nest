@@ -45,7 +45,7 @@ function new_msg() {
 function update_msg(msg) {
   var msgtext = msg.children(".content").first().val();
   msg.children(".chars_left").text(140 - msgtext.length);
-  msg.children(".tweet").prop("href", "https://twitter.com/share?text=" + encodeURIComponent(msgtext));
+  msg.children(".tweet").prop("href", "https://twitter.com/share?text=" + encodeURIComponent(msgtext) + "&url=''");
 }
 
 $(document).ready(function () {
