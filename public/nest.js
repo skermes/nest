@@ -13,13 +13,7 @@ function init_msg() {
   newmsg.droppable({
     activeClass: "dragging",
     hoverClass: "drag_onto",
-    drop: function(event, ui) {
-      var nextmsg = $(this).next();
-      ui.draggable.after($(this));
-      nextmsg.before(ui.draggable);
-      ui.draggable.css("left", "");
-      ui.draggable.css("top", "");
-    }
+    drop: drop_msg
   });
   newmsg.removeClass("template");
   return newmsg;
@@ -48,6 +42,17 @@ function update_msg(msg) {
   msg.children(".tweet").prop("href", "https://twitter.com/share?text=" + encodeURIComponent(msgtext) + "&url=''");
 }
 
+function drop_msg(event, ui) {
+  var nextmsg = $(this).next();
+  if (nextmsg.hasClass("ui-draggable-dragging")) {
+    nextmsg = $(this);
+  }
+  ui.draggable.after($(this));
+  nextmsg.before(ui.draggable);
+  ui.draggable.css("left", "");
+  ui.draggable.css("top", "");
+}
+
 $(document).ready(function () {
   grid = $("#msg_grid");
   template = $(".msg.template");
@@ -58,13 +63,7 @@ $(document).ready(function () {
 
   $(".msg.placeholder").droppable({
     hoverClass: "drag_onto",
-    drop: function(event, ui) {
-      var nextmsg = $(this).next();
-      ui.draggable.after($(this));
-      nextmsg.before(ui.draggable);
-      ui.draggable.css("left", "");
-      ui.draggable.css("top", "");
-    }
+    drop: drop_msg
   });
 });
 
