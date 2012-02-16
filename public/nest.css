@@ -64,3 +64,8 @@ h1 {
   display: none;
 }
 
+.icon-tweet {
+  background-image: url('http://a4.twimg.com/images/favicon.ico');
+  background-position: -1px -1px;
+}
+
