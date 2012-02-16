@@ -13,26 +13,8 @@
       %a#new_msg.btn{ :href => "#" }
         %i.icon-plus
       %div#msg_grid
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
-        %div.msg.placeholder
+        - 20.times do
+          %div.msg.placeholder
         %div.msg.template
           %textarea.content
           %a.btn.fork{ :href => "#" }
