@@ -5,9 +5,11 @@ function init_msg() {
   var newmsg = template.clone();
   newmsg.children(".fork").on("click", function(event) {
     fork_msg(newmsg);
+    event.preventDefault();
   });
   newmsg.children(".content").on("keyup", function(event) {
     update_msg(newmsg);
+    event.preventDefault();
   });
   newmsg.draggable({ revert: "invalid" });
   newmsg.droppable({
